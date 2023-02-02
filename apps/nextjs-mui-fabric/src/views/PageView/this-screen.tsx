@@ -8,19 +8,19 @@ import { ScreenRoutes, PageViewProps } from './types';
 import Link from 'next/link';
 import { Button } from '@material-ui/core';
 import { useGoToScreen } from './util/useGoToScreen';
+import Center from '../../components/organisms/Center';
 
 const ThisScreen: React.VFC<PageViewProps> = () => {
-
-  const goToScreen =  useGoToScreen(ScreenRoutes.that)
+  const goToScreen = useGoToScreen(ScreenRoutes.that);
   return (
     <>
       <Section>
-        <>
-          <Button onClick={() => goToScreen.goToScreen()}>
-            that screen
-          </Button>
-          <ContentBlock variant="secondary" />
-        </>
+        <Center>
+          <Button onClick={() => goToScreen.goToScreen()}>that screen</Button>
+        </Center>
+      </Section>
+      <Section>
+        <ContentBlock variant="secondary" />
       </Section>
     </>
   );

@@ -3,19 +3,26 @@ import { useRouter } from 'next/router';
 import thatScreen from '../../views/PageView/that-screen';
 import thisScreen from '../../views/PageView/this-screen';
 
+export interface PageServerSideProps {
+  metadata: unknown;
+}
+
 export enum ScreenRoutes {
   this = 'this',
   that = 'that',
   invalid = 'invalid',
 }
 
-export const routeToModuleMap: Record<string, React.VFC<any>> = {
+export const routeToModuleMap: Record<
+  string,
+  React.VFC<PageServerSideProps>
+> = {
   [ScreenRoutes.this]: thisScreen,
   [ScreenRoutes.that]: thatScreen,
   [ScreenRoutes.invalid]: thatScreen,
 };
 
-const Screen: React.VFC<any> = (props) => {
+const Screen: React.VFC<PageServerSideProps> = (props) => {
   const router = useRouter();
   const { screen } = router.query;
   const route = screen?.[0];
@@ -28,15 +35,15 @@ const Screen: React.VFC<any> = (props) => {
 
   const Module = routeToModuleMap[routeName];
 
-  return <Module screen={props.screen} metadata={props.meta} />;
+  return <Module metadata={props.metadata} />;
 };
 
 export async function getServerSideProps() {
-  const getData = () => Promise.resolve(1);
+  const getData = () => Promise.resolve('something');
 
   const _data = await getData();
 
-  return { props: { _data } };
+  return { props: { metadata: _data } };
 }
 
 export default Screen;
