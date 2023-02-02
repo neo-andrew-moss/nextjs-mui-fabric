@@ -46,8 +46,11 @@ or
 `Section: JSX.Element -> JSX.Element`
 
 ```typescript
-<Section> // Applies page level structure (padding, breakpoints, etc.)
-  <ContentBlock variant="primary" /> // Specific self closing structure (think art, image, etc)
+<Section>
+  {" "}
+  // Applies page level structure (padding, breakpoints, etc.)
+  <ContentBlock variant="primary" /> // Specific self closing structure (think
+  art, image, etc)
 </Section>
 ```
 
