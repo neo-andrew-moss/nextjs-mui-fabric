@@ -5,16 +5,19 @@ module.exports = {
     locales: ['en-CA', 'fr-CA'],
     defaultLocale: 'en-CA',
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   async rewrites() {
     return [
-        {
-            source: "/zone2",
-            destination: `http://localhost:3001/zone2`,
-        },
-        {
-            source: "/zone2/:path*",
-            destination: `http://localhost:3001/zone2/:path*`,
-        },
+      {
+        source: '/zone2',
+        destination: `http://localhost:3001/zone2`,
+      },
+      {
+        source: '/zone2/:path*',
+        destination: `http://localhost:3001/zone2/:path*`,
+      },
     ];
-},
+  },
 };

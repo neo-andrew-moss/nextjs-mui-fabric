@@ -8,9 +8,9 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3001",
     "lint": "next lint",
-    "check":"tsc --noEmit",
+    "check": "tsc --noEmit",
     "clean": "rm -rf .next && rm -rf .turbo",
     "fix:prettier": "prettier './src/**/*.{tsx,ts}' --write",
     "fix:eslint": "eslint ./src --fix",

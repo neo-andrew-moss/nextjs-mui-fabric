@@ -4,8 +4,6 @@ import { ScreenRoutes } from '../types';
 export const useGoToScreen = (route: ScreenRoutes) => {
   const { replace } = useRouter();
 
-  
-
   const goToScreen = async () => {
     await new Promise((resolve) => setTimeout(resolve, 100));
     await replace(route);
@@ -13,6 +11,6 @@ export const useGoToScreen = (route: ScreenRoutes) => {
   };
 
   return {
-    goToScreen
-  }
+    goToScreen,
+  };
 };

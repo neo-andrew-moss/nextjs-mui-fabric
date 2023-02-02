@@ -9,7 +9,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const AppBar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box style={{ flexGrow: 1 }}>
       <_AppBar position="static">
         <Toolbar>
           <IconButton color={'primary'} edge="start" aria-label="menu">

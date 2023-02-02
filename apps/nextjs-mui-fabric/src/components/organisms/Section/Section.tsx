@@ -29,7 +29,7 @@ interface SectionProps {
   narrow?: boolean;
   fullWidth?: boolean;
   disablePadding?: boolean;
-  [_: string]: any;
+  [_: string]: unknown;
 }
 
 const Section = ({

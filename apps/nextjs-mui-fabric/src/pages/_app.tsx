@@ -30,4 +30,4 @@ _App.getInitialProps = async (
   };
 };
 
-export default _App
+export default _App;

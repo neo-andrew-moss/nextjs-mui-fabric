@@ -5,7 +5,6 @@ import Section from 'components/organisms/Section';
 import ContentBlock from './components/ContentBlock';
 import withLayout from 'layouts/main/withLayout';
 import { ScreenRoutes, PageViewProps } from './types';
-import Link from 'next/link';
 import { Button } from '@material-ui/core';
 import { useGoToScreen } from './util/useGoToScreen';
 import Center from '../../components/organisms/Center';

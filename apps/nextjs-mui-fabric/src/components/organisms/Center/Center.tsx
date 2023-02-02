@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 
 interface ICenterProps {
-  [_: string]: any;
+  [_: string]: unknown;
 }
 
 const Center = ({

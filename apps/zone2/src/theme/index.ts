@@ -4,7 +4,7 @@ import { purple, pink } from '@material-ui/core/colors';
 
 const theme = createMuiTheme({
   palette: {
-    type:"dark",
+    type: 'dark',
     primary: {
       main: purple[500],
       light: purple[400],

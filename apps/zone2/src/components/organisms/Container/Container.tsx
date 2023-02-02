@@ -2,7 +2,7 @@ import React from 'react';
 import { Container as _Container } from '@material-ui/core';
 
 interface IContainerProps {
-  [_: string]: any;
+  [_: string]: unknown;
 }
 
 const Container = ({

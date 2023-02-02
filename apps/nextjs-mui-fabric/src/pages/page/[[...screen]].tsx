@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRouter } from 'next/router';
 
 import thatScreen from '../../views/PageView/that-screen';
