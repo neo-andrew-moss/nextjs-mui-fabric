@@ -1,12 +1,12 @@
 {
-  "name": "nextjs-mui-fabric",
+  "name": "zone2",
   "author": "Andrew Moss",
   "email": "andrew@m0ss.dev",
   "description": "Instructional Nextjs project with a focus on composition over inheritance",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
