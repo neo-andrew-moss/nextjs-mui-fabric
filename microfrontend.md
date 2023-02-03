@@ -2,7 +2,7 @@
 
 ```bash
 ├── apps
-│   ├── nextjs-mui-fabric
+│   ├── main
 │   ├── zone2
 ```
 

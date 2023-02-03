@@ -14,7 +14,7 @@
     "format": "prettier --write .",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules",
-    "sync": "rm -r ./apps/zone2/src && cp -r ./apps/nextjs-mui-fabric/src ./apps/zone2/src",
+    "sync": "rm -r ./apps/zone2/src && cp -r ./apps/main/src ./apps/zone2/src",
     "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
   "dependencies": {

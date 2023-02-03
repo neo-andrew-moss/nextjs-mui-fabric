@@ -1,3 +1,5 @@
+const { ZONE_2_URL } = process.env
+
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
@@ -12,11 +14,11 @@ module.exports = {
     return [
       {
         source: '/zone2',
-        destination: `http://localhost:3001/zone2`,
+        destination: `${ZONE_2_URL}/zone2`,
       },
       {
         source: '/zone2/:path*',
-        destination: `http://localhost:3001/zone2/:path*`,
+        destination: `${ZONE_2_URL}/zone2/:path*`,
       },
     ];
   },
